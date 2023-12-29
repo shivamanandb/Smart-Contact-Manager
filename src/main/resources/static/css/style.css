@@ -1,0 +1,148 @@
+body {
+    background-color: rgb(164, 157, 157);
+    overflow-x: hidden;
+    /* overflow-y: hidden; */
+}
+
+.bg-primary {
+    background: #009688 ! important;
+}
+
+.banner {
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(rgba(0,0,0,.7), rgba(0,0,0,.7)), url(../images/banner.jpg);
+    background-size: cover;
+    color: white;
+}
+
+.my-card {
+    padding: 20px;
+    background-color: white;
+}
+
+#login .container #login-row #login-column #login-box {
+    margin-top: 120px;
+    max-width: 600px;
+    height: 320px;
+    border: 1px solid #9C9C9C;
+    background-color: darkslategray;
+}
+#login .container #login-row #login-column #login-box #login-form {
+  padding: 20px;
+}
+#login .container #login-row #login-column #login-box #login-form #register-link {
+  margin-top: -85px;
+}
+
+/* Side-Bar Style */
+
+.sidebar {
+  width: 18%;
+  background-color: white;
+  height: 100vh;
+  position: fixed;
+  padding-top: 45px;
+}
+
+.sidebar a {
+  display: block;
+  width: 100%;
+  padding: 10px 25px;
+  text-decoration: none;
+  color: grey;
+}
+
+@media only screen and (max-width: 600px) {
+  .sidebar {
+    display: none;
+    width: 80% !important;
+    background: white;
+    height: 100vh;
+    position: fixed;
+    padding-top: 20px;
+    z-index: 1;
+  }
+  .content {
+    margin-left: 0% !important;
+  }
+  .home_logo {
+    width: 150px !important;
+    height: 150px !important;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 10px solid darkcyan;
+  }
+}
+
+.sidebar a:hover {
+  background-color: rgb(164, 157, 157);
+  color: white;
+
+}
+
+.sidebar .divider {
+  height: .5px;
+  width: 100%;
+  background-color: rgb(164, 157, 157);
+  margin-top: 10px;
+}
+
+.sidebar .crossBtn {
+  position: absolute;
+  right: 35px;
+  top: 0;
+  font-size: 36px;
+  cursor: pointer;
+}
+
+/* content style */
+
+.content {
+  margin-left: 20%;
+  /* margin-right: 2%; */
+
+}
+
+.content #bars {
+  cursor: pointer;
+}
+
+.my_profile_picture {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.bg-grey {
+  background-color: #7f765e5d;
+}
+
+.home_logo {
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 10px solid darkcyan;
+}
+
+/* search-result  */
+.search-container {
+  position: relative;
+}
+
+.search-result {
+  position: absolute;
+  background: white;
+  width: 100%;
+  padding: 10px;
+  border: 1px solid grey;
+  display: none;
+}
+
+/* Dynamically add class using JQuery  */
+.active {
+  background: #009688 !important;
+  color: white !important;
+}

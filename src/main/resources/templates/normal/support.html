@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org" th:replace="normal/base::Layout(~{::section})">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>This is home page</title>
+</head>
+<body>
+    <section>
+
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="card">
+                        <div class="card-body">
+
+                            <h1 class="container text-center">Donate Us</h1>
+
+                            <div class="container">
+
+                                
+                                    <input name="amount" id="payment_field" type="number" class="container form-control" placeholder="Enter amount">
+                                    <div class="text-center mt-3">
+                                        <button onclick="paymentStart()" class="btn btn-warning">Donate</button>
+                                    </div>
+                         
+                               
+                                
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <script>
+            $(document).ready(()=>{
+                $("#support-link").addClass("active");
+            })
+        </script>
+
+    </section>
+</body>
+</html>

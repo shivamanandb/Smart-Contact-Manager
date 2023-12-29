@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org" th:replace="base::Layout(~{::section})">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>This is home page</title>
+</head>
+<body>
+    <section>
+        <div class="container">
+            <form class="form-signin" method="post" th:action="@{/logout}">
+              <h2 class="form-signin-heading">Are you sure you want to log out?</h2>
+              <input name="_csrf" type="hidden" value="MLzmFtJskWRDLwDcNHIX5JC2nATc-PwcIBlxxZnYoQZCumZSBN_QJLFf811uG2W4B18j0fWGsT3pnM4xRSoQpv3gljYkg1Zg" />
+              <button class="btn btn-lg btn-primary btn-block" type="submit">Log Out</button>
+    </section>
+</body>
+</html>
